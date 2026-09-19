@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 0;
+    background-color: #111;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("XG369_bg.jfif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+    transform: translateZ(0);
+    z-index: -1;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.logo .xg369 {
+    width: 220px;
+    height: auto;
+    /* background-color: aliceblue; */
+    border: solid 6px #ce7c02;
+    
+    border-radius: 50%; 
+    box-shadow: #000000 0px 0px 20px, #000000 0px 0px 40px;
+
+    
+
+}
+
+.play-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    /* background-color: #272626; */
+}
+
+.play-game .play {
+    background-color: rgba(235, 171, 33, 0.973);
+    padding: 15px 80px;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.play-game .play:hover {
+    background-color: rgba(248, 248, 248, 0.342);
+    transform: scale(1.05);
+
+}
+
+.play-game .play a {
+    text-decoration: none;
+    color: #272626;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.click{
+    margin-top: 3rem;
+    margin-bottom: -4rem;
+    color: rgb(236, 236, 234);
+    text-align: center;
+    text-shadow: #000000 2px 2px 2px;
+    /* background-color: #ce7c02; */
+    padding: 1rem;
+}
+
+.click h1{
+    margin: 5px;
+}
+
+.ct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact div {
+    background-color: rgba(219, 219, 219, 0.356);
+    padding: 13px 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact div:hover {
+    background-color: rgba(88, 88, 88, 0.2);
+    transform: scale(1.05);
+}
+
+.contact div a {
+    text-decoration: none;
+    color: #1c1d1d;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact div a i {
+    font-size: 1.5em;
+}
+
